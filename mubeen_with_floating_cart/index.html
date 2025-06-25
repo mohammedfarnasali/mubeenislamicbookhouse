@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mubeen Islamic Book House</title>
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+  <h1>Mubeen Islamic Book House</h1>
+   <!--<div class="tagline">Your Trusted Islamic Store Since 1995 📍 Masjid-E-Chowk Complex, Hanamkonda — 📞 6301284561</div>-->
+  </header>
+
+  <nav>
+    <a href="#ArabicBooks">Arabic Books (KIDS)</a>
+    <a href="#books">Books</a> 
+    <a href="#perfumes">Perfumes</a>
+    <a href="#caps">Caps</a>
+    <a href="#janimaaz">Janimaz</a>
+    <a href="#scarfs">Scarfs</a>
+    <a href="#others">Others</a>
+    
+  </nav>
+
+  <div class="container">
+
+    <!--Kids books location-->
+    <div id="ArabicBooks" class="section-title">📖 Arabic Books (KIDS)</div>
+    <!--product 1 NOORANI QAIDA paper-->
+    <div class="product" data-name="Noorani Qaida (paper)" data-price="30">
+      <img src=".//arabic pic/arabic quaida.jpg" alt="Arabic Book" />
+      <div class="product-details">
+        <h2>Noorani Qaida (paper)</h2>
+        <p>Price: ₹30</p>
+        <div class="controls">
+          <button onclick="updateQty(this, -1)">−</button>
+          <span>0</span>
+          <button onclick="updateQty(this, 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+     <!--product 2 NOORANI QAIDA oil paper-->
+    <div class="product" data-name="Noorani Qaida (Oil paper)" data-price="60">
+      <img src=".//arabic pic/arabic quaida.jpg" alt="Arabic Book" />
+      <div class="product-details">
+        <h2>Noorani Qaida (Oil paper)</h2>
+        <p>Price: ₹60</p>
+        <div class="controls">
+          <button onclick="updateQty(this, -1)">−</button>
+          <span>0</span>
+          <button onclick="updateQty(this, 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!--product 3 NOORANI QAIDA plastic paper-->
+    <div class="product" data-name="Noorani Qaida (Plastic oil paper)" data-price="60">
+      <img src=".//arabic pic/arabic quaida.jpg" alt="Arabic Book" />
+      <div class="product-details">
+        <h2>Noorani Qaida (Plastic oil paper)</h2>
+        <p>Price: ₹120</p>
+        <div class="controls">
+          <button onclick="updateQty(this, -1)">−</button>
+          <span>0</span>
+          <button onclick="updateQty(this, 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!--product 4 Bolta QAIDA plastic paper-->
+    <div class="product" data-name="bolta qaida" data-price="40">
+      <img src=".//arabic pic/arabic quaida.jpg" alt="Arabic Book" />
+      <div class="product-details">
+        <h2>Bolta Qaida (Part 1&2)</h2>
+        <p>Price: ₹40</p>
+        <div class="controls">
+          <button onclick="updateQty(this, -1)">−</button>
+          <span>0</span>
+          <button onclick="updateQty(this, 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!--product 4 Roman NOORANI QAIDA plastic paper-->
+    <div class="product" data-name="Eng Noorani Qaida (Plastic oil paper)" data-price="60">
+      <img src=".//arabic pic/arabic quaida.jpg" alt="Arabic Book" />
+      <div class="product-details">
+        <h2>Eng Noorani Qaida (Plastic oil paper)</h2>
+        <p>Price: ₹70</p>
+        <div class="controls">
+          <button onclick="updateQty(this, -1)">−</button>
+          <span>0</span>
+          <button onclick="updateQty(this, 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="books" class="section-title">📚 Islamic Books</div>
+    <div class="product" data-name="English Roman Urdu Quran" data-price="550">
+      <img src="https://i.imgur.com/GZxvO0u.png" alt="Quran">
+      <div class="product-details">
+        <h2>English Roman Urdu Quran</h2>
+        <p>Price: ₹550</p>
+        <div class="controls">
+          <button onclick="updateQty(this, -1)">−</button>
+          <span>0</span>
+          <button onclick="updateQty(this, 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product" data-name="Qaida" data-price="50">
+      <img src="https://i.imgur.com/GZxvO0u.png" alt="Qaida">
+      <div class="product-details">
+        <h2>Qaida</h2>
+        <p>Price: ₹50</p>
+        <div class="controls">
+          <button onclick="updateQty(this, -1)">−</button>
+          <span>0</span>
+          <button onclick="updateQty(this, 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="perfumes" class="section-title">🌸 Perfumes</div>
+    <div class="product" data-name="Atar (10ml)" data-price="120">
+      <img src="https://i.imgur.com/CJey9B1.png" alt="Atar">
+      <div class="product-details">
+        <h2>Atar (10ml)</h2>
+        <p>Price: ₹120</p>
+        <div class="controls">
+          <button onclick="updateQty(this, -1)">−</button>
+          <span>0</span>
+          <button onclick="updateQty(this, 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="caps" class="section-title">🧢 Caps</div>
+    <div class="product" data-name="White Namaz Cap" data-price="50">
+      <img src="https://i.imgur.com/Nh0vUwB.png" alt="Cap">
+      <div class="product-details">
+        <h2>White Namaz Cap</h2>
+        <p>Price: ₹50</p>
+        <div class="controls">
+          <button onclick="updateQty(this, -1)">−</button>
+          <span>0</span>
+          <button onclick="updateQty(this, 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="janimaaz" class="section-title">🧎 Janimaaz</div>
+    <div class="product" data-name="Standard Janimaaz" data-price="150">
+      <img src="https://i.imgur.com/gu60TDM.png" alt="Janimaz">
+      <div class="product-details">
+        <h2>Standard Janimaaz</h2>
+        <p>Price: ₹150</p>
+        <div class="controls">
+          <button onclick="updateQty(this, -1)">−</button>
+          <span>0</span>
+          <button onclick="updateQty(this, 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="others" class="section-title">📦 Others</div>
+    <div class="product" data-name="Miswak Stick" data-price="20">
+      <img src="https://i.imgur.com/fXS5kBo.png" alt="Other Product">
+      <div class="product-details">
+        <h2>Miswak Stick</h2>
+        <p>Price: ₹20</p>
+        <div class="controls">
+          <button onclick="updateQty(this, -1)">−</button>
+          <span>0</span>
+          <button onclick="updateQty(this, 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="scarfs" class="section-title">🧕 Scarfs for Girls</div>
+    <div class="product" data-name="Plain Cotton Scarf" data-price="200">
+      <img src="https://i.imgur.com/Nh0vUwB.png" alt="Scarf" />
+      <div class="product-details">
+        <h2>Plain Cotton Scarf</h2>
+        <p>Price: ₹200</p>
+        <div class="controls">
+          <button onclick="updateQty(this, -1)">−</button>
+          <span>0</span>
+          <button onclick="updateQty(this, 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product" data-name="Embroidered Scarf" data-price="350">
+      <img src="https://i.imgur.com/fXS5kBo.png" alt="Scarf" />
+      <div class="product-details">
+        <h2>Embroidered Scarf</h2>
+        <p>Price: ₹350</p>
+        <div class="controls">
+          <button onclick="updateQty(this, -1)">−</button>
+          <span>0</span>
+          <button onclick="updateQty(this, 1)">+</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="product" data-name="English Roman Urdu Quran" data-price="550">
+      <img src="https://i.imgur.com/GZxvO0u.png" alt="Quran">
+      <div class="product-details">
+        <h2>English Roman Urdu Quran</h2>
+        <p>Price: ₹550</p>
+        <div class="controls">
+          <button onclick="updateQty(this, -1)">−</button>
+          <span>0</span>
+          <button onclick="updateQty(this, 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product" data-name="Qaida" data-price="50">
+      <img src="https://i.imgur.com/GZxvO0u.png" alt="Qaida">
+      <div class="product-details">
+        <h2>Qaida</h2>
+        <p>Price: ₹50</p>
+        <div class="controls">
+          <button onclick="updateQty(this, -1)">−</button>
+          <span>0</span>
+          <button onclick="updateQty(this, 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="perfumes" class="section-title">🌸 Perfumes</div>
+    <div class="product" data-name="Atar (10ml)" data-price="120">
+      <img src="https://i.imgur.com/CJey9B1.png" alt="Atar">
+      <div class="product-details">
+        <h2>Atar (10ml)</h2>
+        <p>Price: ₹120</p>
+        <div class="controls">
+          <button onclick="updateQty(this, -1)">−</button>
+          <span>0</span>
+          <button onclick="updateQty(this, 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="cart" class="section-title" style="position: fixed; top: 140px; right: 10px; background: white; padding: 15px; width: 300px; box-shadow: 0 0 10px rgba(0,0,0,0.2); border-radius: 8px; z-index: 1002;">
+      <h2 style="font-size: 20px; margin-top: 0;">🛒 Your Cart</h2>
+      <div id="cart-items" style="font-size: 14px;"></div>
+      <div id="cart-total" style="font-size: 16px; margin-top: 10px;"></div>
+      <a id="place-order-btn" class="whatsapp-btn" href="#" style="display: none; margin-top: 10px;" target="_blank">Place Order on WhatsApp</a>
+    </div>
+
+  </div>
+
+  <footer>📍 Masjid-E-Chowk Complex, Hanamkonda — 📞 6301284561</footer>
+
+  <script>
+    const cart = {};
+
+    function updateQty(btn, delta) {
+      const product = btn.closest('.product');
+      const name = product.getAttribute('data-name');
+      const price = parseInt(product.getAttribute('data-price'));
+      const span = product.querySelector("span");
+      let count = parseInt(span.innerText) + delta;
+      if (count < 0) count = 0;
+      span.innerText = count;
+
+      if (count === 0) {
+        delete cart[name];
+      } else {
+        cart[name] = { price, qty: count };
+      }
+      saveCart();
+      renderCart();
+    }
+
+    function renderCart() {
+      const cartDiv = document.getElementById("cart-items");
+      const totalDiv = document.getElementById("cart-total");
+      const orderBtn = document.getElementById("place-order-btn");
+
+      cartDiv.innerHTML = "";
+      let total = 0;
+      for (let [name, item] of Object.entries(cart)) {
+        const itemTotal = item.price * item.qty;
+        total += itemTotal;
+        cartDiv.innerHTML += `<div style="margin-bottom: 8px;">
+          ${name} — Qty: ${item.qty} × ₹${item.price} = ₹${itemTotal}
+          <button onclick="removeFromCart('${name}')" style="margin-left: 5px; background: red; color: white; border: none; padding: 2px 6px; border-radius: 4px; cursor: pointer;">x</button>
+        </div>`;
+      }
+
+      totalDiv.innerText = total > 0 ? `Total: ₹${total}` : "";
+      orderBtn.style.display = total > 0 ? "block" : "none";
+
+      const messageLines = Object.entries(cart).map(([name, item]) =>
+        `${name} - Qty: ${item.qty} x ₹${item.price} = ₹${item.price * item.qty}`
+      );
+      const message = `*Mubeen Islamic Book House Order*%0A%0A${messageLines.join('%0A')}%0A%0A*Total: ₹${total}*`;
+      orderBtn.href = `https://wa.me/916301284561?text=${message}`;
+    }
+
+  function removeFromCart(name) {
+  delete cart[name];
+  renderCart();
+  saveCart();
+
+  // ALSO update product quantity display
+  const product = document.querySelector(`.product[data-name="${name}"]`);
+  if (product) {
+    const span = product.querySelector("span");
+    if (span) {
+      span.innerText = "0";
+    }
+  }
+}
+
+    function saveCart() {
+      localStorage.setItem("mubeenCart", JSON.stringify(cart));
+    }
+
+    function loadCart() {
+      const saved = localStorage.getItem("mubeenCart");
+      if (saved) {
+        Object.assign(cart, JSON.parse(saved));
+        renderCart();
+      }
+    }
+
+    
+    window.onload = () => {
+      loadCart();
+      const allProducts = document.querySelectorAll('.product');
+      allProducts.forEach(product => {
+        const name = product.getAttribute('data-name');
+        if (cart[name]) {
+          product.querySelector('span').innerText = cart[name].qty;
+        }
+      });
+    };
+    
+  </script>
+
+ <button id="floating-cart" onclick="toggleCart()" style="
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #013012;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 1100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+">
+  🛒<span id="cart-count" style="position: absolute; top: 5px; right: 6px; background: red; color: white; font-size: 12px; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;">0</span>
+</button>
+
+<script>
+  function toggleCart() {
+    const cartBox = document.getElementById("cart");
+    if (cartBox.style.display === "none") {
+      cartBox.style.display = "block";
+    } else {
+      cartBox.style.display = "none";
+    }
+  }
+
+  function updateCartCount() {
+    const count = Object.values(cart).reduce((sum, item) => sum + item.qty, 0);
+    const badge = document.getElementById("cart-count");
+    badge.innerText = count;
+    badge.style.display = count > 0 ? "flex" : "none";
+  }
+
+  const originalRenderCart = renderCart;
+  renderCart = function() {
+    originalRenderCart();
+    updateCartCount();
+  };
+
+  // Start with cart hidden on mobile
+  window.onload = () => {
+    loadCart();
+    const allProducts = document.querySelectorAll('.product');
+    allProducts.forEach(product => {
+      const name = product.getAttribute('data-name');
+      if (cart[name]) {
+        product.querySelector('span').innerText = cart[name].qty;
+      }
+    });
+    document.getElementById("cart").style.display = "none";
+    updateCartCount();
+  };
+</script>
+</body>
+
+</html>
